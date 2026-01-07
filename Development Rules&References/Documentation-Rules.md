@@ -7,6 +7,7 @@ These rules are derived from the `Documentation` notes in `Cursor Setup.drawio`.
 - **Use a consolidated approach to documentation.**
   - Prefer updating existing core documents instead of creating many small, one-off documents.
   - Keep Solution Design, Solution Planning, and UI documentation as the primary documents.
+  - Development documentation remains **Markdown** (`.md`) for day-to-day work; **end-user documentation** should be **published** using a **LaTeX-based output pipeline** (Hybrid/Option C — see `Development Rules&References/LaTeX/ROADMAP.md`) to produce more polished deliverables (e.g., PDFs).
 
 ## Diagrams
 
