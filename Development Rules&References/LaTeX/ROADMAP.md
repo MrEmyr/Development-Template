@@ -38,10 +38,10 @@ This roadmap is a **step-by-step checklist** to introduce LaTeX-based documentat
 
 ## Phase 0 — Confirm requirements (30–60 minutes)
 
-- [ ] **Outputs**: PDF only, or PDF + HTML?
-- [ ] **Build location**: local only, or local + CI?
-- [ ] **Windows-first**: yes (PowerShell build script recommended).
-- [ ] **Doc set to pilot**: pick one (e.g., BPMN pack).
+- [x] **Outputs**: PDF + optional DOCX/PPTX (no HTML for now)
+- [x] **Build location**: local only, or local + CI? (chosen: **local only**, for now)
+- [x] **Windows-first**: yes (PowerShell build script recommended).
+- [x] **Doc set to pilot**: `Development Rules&References/Code Development Rules/Code Based Solution - Development-Rules.md` (pilot only)
 
 Deliverable:
 - [x] Create `Development Rules&References/LaTeX/DECISIONS.md` with the chosen option and output targets.
