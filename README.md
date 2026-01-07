@@ -6,8 +6,9 @@ This workspace follows the structure and rules defined in `Cursor Setup.drawio`.
 Folders
 -------
 
-- `Documentation/` – Consolidated documentation for the solution.
-  - `Archive/` – Archived/superseded documentation, mirroring the development folders.
+- `Development Rules&References/` – Rules, references, and templates (e.g. BPMN/Archimate notes, API references, coding rules).
+- `Documentation/` – Solution-specific development documentation (created/maintained per project).
+  - `Archive/` – Archived/superseded development documentation, mirroring the active `Documentation/` structure.
 - `Solution/` – Main solution implementation (services, APIs, automation, etc.).
 - `UI/` – User interface implementation and UI assets.
 - `Other/` – Any supporting artifacts that don’t fit elsewhere.
@@ -39,6 +40,7 @@ Key Process Rules (from Draw.io)
 Working Docs
 ------------
 
-- See `Documentation/` for detailed rule documents and plans.
+- See `Development Rules&References/` for detailed rule/reference documents and templates.
+- See `Documentation/` for solution-specific design/planning docs created during implementation.
 - See `scripts/deploy.ps1` for the deployment script skeleton.
 - See `scripts/smoke-test.ps1` for the smoke test command skeleton.
