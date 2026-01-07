@@ -44,7 +44,7 @@ This roadmap is a **step-by-step checklist** to introduce LaTeX-based documentat
 - [ ] **Doc set to pilot**: pick one (e.g., BPMN pack).
 
 Deliverable:
-- [ ] Create `Development Rules&References/LaTeX/DECISIONS.md` with the chosen option and output targets.
+- [x] Create `Development Rules&References/LaTeX/DECISIONS.md` with the chosen option and output targets.
 
 ---
 
