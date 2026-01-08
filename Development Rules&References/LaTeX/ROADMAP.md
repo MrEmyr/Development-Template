@@ -75,11 +75,11 @@ Recommended folders:
 - `Development Rules&References/LaTeX/template/` — LaTeX templates and shared style
 - `Development Rules&References/LaTeX/macros/` — shared `macros.tex` (commands used across docs)
 - `Development Rules&References/assets/` — images/exports (e.g., `.png`, `.svg`)
-- `Development Rules&References/build/` — generated PDFs (usually **gitignored**)
+- `Documentation/build/` — generated PDFs (usually **gitignored**)
 
 Deliverables:
 - [ ] Create template and macro folders
-- [ ] Add `Development Rules&References/build/` to `.gitignore` (and LaTeX build artifacts like `*.aux`, `*.log`, etc.)
+- [ ] Add `Documentation/build/` to `.gitignore` (and LaTeX build artifacts like `*.aux`, `*.log`, etc.)
 
 ---
 
@@ -109,7 +109,7 @@ Create build scripts (non-interactive, repeatable):
 
 - `scripts/docs/build-docs.ps1`
   - Inputs: one or more `.md` files
-- Output: PDFs into `Development Rules&References/build/`
+- Output: PDFs into `Documentation/build/`
   - Use your LaTeX template + macros
 
 Optional:
@@ -121,7 +121,7 @@ Optional:
 
 Deliverables:
 - [ ] One command builds a PDF for the pilot doc set
-- [ ] Output goes to `Development Rules&References/build/`
+- [ ] Output goes to `Documentation/build/`
 
 ---
 
@@ -144,7 +144,7 @@ Pick one:
 - [ ] Convert the selected docs into structured LaTeX sections
 
 Deliverables:
-- [ ] `Development Rules&References/build/BPMN.pdf` (or a set of PDFs)
+- [ ] `Documentation/build/BPMN.pdf` (or a set of PDFs)
 
 ---
 

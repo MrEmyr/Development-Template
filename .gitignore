@@ -5,3 +5,29 @@ build/
 .env.local
 .DS_Store
 
+# Temp working folders (local only)
+.tmp/
+
+# Draw.io backup artifacts (generated)
+**/.$*.drawio.bkp
+
+# Documentation outputs (generated)
+Documentation/build/
+
+# LaTeX build artifacts (generated)
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.xdv
