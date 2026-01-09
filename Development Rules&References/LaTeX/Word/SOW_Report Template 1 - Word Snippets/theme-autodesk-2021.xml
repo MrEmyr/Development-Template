@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Word OpenXML theme snippet extracted from:
+  word/theme/theme1.xml (SOW_Report Template 1.dotx)
+
+  Use in Word only (.docx/.dotx). Merge the <a:clrScheme> (and optionally font scheme)
+  into your target template's word/theme/theme1.xml.
+-->
+<a:themeElements xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+  <a:clrScheme name="Autodesk 2021">
+    <a:dk1><a:sysClr val="windowText" lastClr="000000"/></a:dk1>
+    <a:lt1><a:sysClr val="window" lastClr="FFFFFF"/></a:lt1>
+    <a:dk2><a:srgbClr val="000000"/></a:dk2>
+    <a:lt2><a:srgbClr val="CCCCCB"/></a:lt2>
+    <a:accent1><a:srgbClr val="666766"/></a:accent1>
+    <a:accent2><a:srgbClr val="D64F27"/></a:accent2>
+    <a:accent3><a:srgbClr val="43B874"/></a:accent3>
+    <a:accent4><a:srgbClr val="5D65AE"/></a:accent4>
+    <a:accent5><a:srgbClr val="FEC21C"/></a:accent5>
+    <a:accent6><a:srgbClr val="000000"/></a:accent6>
+    <a:hlink><a:srgbClr val="D64F27"/></a:hlink>
+    <a:folHlink><a:srgbClr val="666766"/></a:folHlink>
+  </a:clrScheme>
+</a:themeElements>
+

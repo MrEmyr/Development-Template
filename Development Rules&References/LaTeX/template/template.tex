@@ -1,0 +1,44 @@
+% Minimal LaTeX template scaffold for repo documentation
+% Intended to be used directly or as a Pandoc LaTeX template base.
+
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{listings}
+
+% Shared formatting primitives (Phase 3)
+\input{../macros/macros.tex}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  urlcolor=black
+}
+
+\title{Document Title}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Formatting primitives smoke test}
+
+Term: \term{Example Term}
+
+Name: \name{Example Name}
+
+Style string: \drawiostyle{fillColor=#D64F27;strokeColor=#666766;}
+
+\subsection{Code block}
+\begin{lstlisting}[style=repoCode]
+// example code block
+const x = 1;
+\end{lstlisting}
+
+\end{document}
+

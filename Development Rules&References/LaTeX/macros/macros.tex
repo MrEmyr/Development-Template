@@ -1,0 +1,29 @@
+% LaTeX macro primitives (notation/domain-agnostic)
+% Used by templates and/or Pandoc LaTeX output.
+%
+% Keep these macros small and reusable; avoid embedding document-specific content here.
+
+\ProvidesFile{macros.tex}[2026/01/09 Formatting primitives]
+
+\RequirePackage{xcolor}
+\RequirePackage{hyperref}
+\RequirePackage{listings}
+
+% --- Terminology / naming primitives ---
+\newcommand{\term}[1]{\textbf{#1}}
+\newcommand{\name}[1]{\textsc{#1}}
+
+% --- Inline "style string" primitive (e.g., draw.io style strings) ---
+\newcommand{\drawiostyle}[1]{\texttt{#1}}
+
+% --- Code block styling (listings) ---
+\lstdefinestyle{repoCode}{
+  basicstyle=\ttfamily\small,
+  breaklines=true,
+  columns=fullflexible,
+  frame=single,
+  rulecolor=\color{black!20},
+  xleftmargin=0.6em,
+  xrightmargin=0.6em
+}
+

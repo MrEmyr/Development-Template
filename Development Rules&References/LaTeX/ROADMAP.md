@@ -88,12 +88,12 @@ Deliverables:
 Create reusable LaTeX macros so docs look consistent:
 - **Code/style snippets**: good for draw.io style strings
 - **Terminology**: consistent formatting for definitions
-- **BPMN naming**: consistent formatting for element names
+- **Domain naming**: consistent formatting for important names (e.g., product names, diagram element names, conventions)
 
 Suggested macro ideas (names are examples):
 - `\term{...}` — glossary-ish highlighting
 - `\drawiostyle{...}` — monospace boxed style string
-- `\bpmn{...}` — BPMN element name formatting
+- `\name{...}` — emphasized “name” formatting (notation/domain-agnostic)
 
 Deliverables:
 - [ ] Add `Development Rules&References/LaTeX/macros/macros.tex`
@@ -107,10 +107,20 @@ Create build scripts (non-interactive, repeatable):
 
 ### If Option A (Pandoc) — recommended scripts
 
-- `scripts/docs/build-docs.ps1`
-  - Inputs: one or more `.md` files
-- Output: PDFs into `Documentation/build/`
-  - Use your LaTeX template + macros
+- `scripts/docs/build-pdf.ps1`
+  - **Inputs**: one or more `.md` files
+  - **Output**: PDFs into `Documentation/build/`
+  - Uses your **LaTeX template + macros** (Pandoc → LaTeX engine)
+
+- `scripts/docs/build-docx.ps1`
+  - **Inputs**: one or more `.md` files
+  - **Output**: DOCX into `Documentation/build/`
+  - Uses a provided **Word reference template** (`--reference-doc=...`)
+
+- `scripts/docs/build-pptx.ps1`
+  - **Inputs**: one or more `.md` files
+  - **Output**: PPTX into `Documentation/build/`
+  - Uses a provided **PowerPoint reference template** (`--reference-doc=...`)
 
 Optional:
 - `scripts/docs/build-docs.sh` for non-Windows environments
@@ -120,8 +130,10 @@ Optional:
 - `scripts/docs/build-tex.ps1` running `latexmk` (or `lualatex` repeatedly via `latexmk`)
 
 Deliverables:
-- [ ] One command builds a PDF for the pilot doc set
-- [ ] Output goes to `Documentation/build/`
+- [ ] One command builds a **PDF** for the pilot doc set
+- [ ] One command builds a **DOCX** for the pilot doc set
+- [ ] One command builds a **PPTX** for the pilot doc set
+- [ ] Outputs go to `Documentation/build/`
 
 ---
 
