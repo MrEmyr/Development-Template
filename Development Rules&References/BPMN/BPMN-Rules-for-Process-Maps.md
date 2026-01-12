@@ -27,6 +27,7 @@ These rules define how Business Process Model and Notation (BPMN) diagrams must 
 - Name activities using **verb + noun** (e.g. "Validate request", "Create issue in ACC").
 - Name events and gateways descriptively (e.g. "Error received from API", "Approved?").
 - Avoid crossing lines; use waypoints or layout adjustments to keep diagrams readable.
+- Avoid gateways/artifacts/activies/events from overlapping.
 
 ## 5. Versioning and Governance
 
